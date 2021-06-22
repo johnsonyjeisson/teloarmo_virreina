@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  🌞 Buenos días, tardes ya 🌞
+  Johnson & Jeisson
+  2021
+  @virreina.space
+-->	
+	
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌞">
+    <title>bueno, bonito y barato</title>
+    <link rel="shortcut icon" href="https://cdn1.ftimg.com/images/logos/big/en_US/camouflage-background.png">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    </head>
+
+<body>
+
+
+    <a-assets>
+        <a-asset-items id="muro" src="./assets/muro.glb" preload="auto"></a-asset-item>
+        <a-asset-items id="resorte" src="./assets/resorte.glb" preload="auto"></a-asset-item>
+        <a-asset-items id="pocillo" src="./assets/pocillo.glb" preload="auto"></a-asset-item>
+        <!--
+            <audio id="audio" src="./assets/burriparlante.mpeg" preload="auto" autoplay loop="true"></audio>
+        -->
+    </a-assets>
+
+    <a-scene
+     loading-screen="enabled: false"; vr-mode-ui="enabled: false">
+    <a-entity environment="preset: default; skyType: atmosphere; sunPosition: 1 7 -2; groundTexture: walkernoise; groundColor: #228B22; groundColor2: #9ACD32; grid: none"></a-entity>
+    <a-entity gltf-model="#muro" scale="2 2 2" position="0 0 0" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#resorte" scale="2 2 2" position="0 0 0"></a-entity>
+    <a-entity gltf-model="#pocillo" scale="2 2 2" position="0 0 0" rotation="0 180 0"></a-entity>
+   <!-- 
+       <a-entity sound="src:#audio; autoplay="true"; loop="true"></a-entity>
+    -->
+    <a-entity position="0 10 25" rotation='0 0 0' > <a-camera></a-camera>  </a-entity> 
+    </a-scene>
+</body>
+</html>
