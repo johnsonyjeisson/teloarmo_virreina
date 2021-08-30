@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="🌞">
     <title>🌞 Buenos días, tardes ya 🌞</title>
-    <link rel="shortcut icon" href="https://cdn1.ftimg.com/images/logos/big/en_US/camouflage-background.png">
+    <link rel="shortcut icon" href="https://d2w9rnfcy7mm78.cloudfront.net/12996773/original_82cb3be43598f19b35abda3f6a2332f1.png?1630299707?bc=0">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     </head>
@@ -26,6 +26,10 @@
         <a-asset-items id="muro" src="./assets/muro.glb" preload="auto"></a-asset-item>
         <a-asset-items id="resorte" src="./assets/resorte.glb" preload="auto"></a-asset-item>
         <a-asset-items id="pocillo" src="./assets/pocillo.glb" preload="auto"></a-asset-item>
+        <img id="avioneta" src="./assets/avioneta.png" preload="auto">
+        <img id="jyj" src="./assets/jyj.png" preload="auto">
+        <img id="xoxo" src="./assets/xoxo.png" preload="auto">
+        
         <!--
             <audio id="audio" src="./assets/burriparlante.mpeg" preload="auto" autoplay loop="true"></audio>
         -->
@@ -34,13 +38,18 @@
     <a-scene
      loading-screen="enabled: false"; vr-mode-ui="enabled: false">
     <a-entity environment="preset: default; skyType: atmosphere; sunPosition: 1 7 -2; groundTexture: walkernoise; groundColor: #228B22; groundColor2: #9ACD32; grid: none"></a-entity>
-    <a-entity gltf-model="#muro" scale="2 2 2" position="0 0 0" rotation="0 180 0"></a-entity>
-    <a-entity gltf-model="#resorte" scale="2 2 2" position="0 0 0"></a-entity>
-    <a-entity gltf-model="#pocillo" scale="2 2 2" position="0 0 0" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#muro" scale="0.5 0.5 0.5" position="0 0 0" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#resorte" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+    <a-entity gltf-model="#pocillo" scale="0.5 0.5 0.5" position="0 0 0" rotation="0 180 0"></a-entity>
+    <a-image src="./assets/avioneta.png" position="0 13 -10" rotation="30 0 0" scale="3 3 3"></a-image>
+    <a-image src="./assets/jyj.png" position="5 13 -10" rotation="30 0 0" scale="5 3 3"></a-image>
+    <a-image src="./assets/xoxo.png" position="10 13 -10" rotation="30 0 0" scale="3 3 3"></a-image>
    <!-- 
        <a-entity sound="src:#audio; autoplay="true"; loop="true"></a-entity>
+        <a-entity wasd-controls="acceleration: 300" position="0 8 30" rotation=''  > <a-camera></a-camera>  </a-entity> 
     -->
-    <a-entity wasd-controls="acceleration: 300" position="0 8 30" rotation=''  > <a-camera></a-camera>  </a-entity> 
+    <a-entity position="0 1 10" rotation=''  > <a-camera></a-camera>  </a-entity> 
+   
     </a-scene>
 </body>
 </html>
