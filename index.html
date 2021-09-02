@@ -27,12 +27,8 @@
         <a-asset-items id="resorte" src="./assets/resorte.glb" preload="auto"></a-asset-item>
         <a-asset-items id="pocillo" src="./assets/pocillo.glb" preload="auto"></a-asset-item>
         <img id="avioneta" src="./assets/avioneta.png" preload="auto">
-        <img id="jyj" src="./assets/jyj.png" preload="auto">
         <img id="xoxo" src="./assets/xoxo.png" preload="auto">
-        
-        <!--
-            <audio id="audio" src="./assets/burriparlante.mpeg" preload="auto" autoplay loop="true"></audio>
-        -->
+        <audio id="audio" src="./assets/lamentoboliviano.mpeg" preload="auto" autoplay loop="true"></audio>
     </a-assets>
 
     <a-scene
@@ -41,16 +37,15 @@
     <a-entity gltf-model="#muro" scale="0.5 0.5 0.5" position="0 0 0" rotation="0 180 0"></a-entity>
     <a-entity gltf-model="#resorte" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
     <a-entity gltf-model="#pocillo" scale="0.5 0.5 0.5" position="0 0 0" rotation="0 180 0"></a-entity>
-    
-   <!-- 
-	<a-image src="./assets/avioneta.png" position="0 13 -10" rotation="30 0 0" scale="3 3 3"></a-image>
-   	<a-image src="./assets/jyj.png" position="5 13 -10" rotation="30 0 0" scale="5 3 3"></a-image>
-    	<a-image src="./assets/xoxo.png" position="10 13 -10" rotation="30 0 0" scale="3 3 3"></a-image>
-        <a-entity sound="src:#audio; autoplay="true"; loop="true"></a-entity>
-        <a-entity wasd-controls="acceleration: 300" position="0 8 30" rotation=''  > <a-camera></a-camera>  </a-entity> 
-    -->
+    <a-image src="./assets/avioneta.png" position="10 13 -10" rotation="30 0 0" scale="3 3 3"></a-image>
+    <a-image src="./assets/xoxo.png" position="17 13 -10" rotation="30 0 0" scale="10 5 3"></a-image>
+    <a-entity sound="src:#audio; autoplay="true"; loop="true"></a-entity>
     <a-entity position="0 1 10" rotation=''  > <a-camera></a-camera>  </a-entity> 
-   
+
+   <!-- 
+    <a-entity wasd-controls="acceleration: 300" position="0 8 30" rotation=''  > <a-camera></a-camera>  </a-entity> 
+    -->
+       
     </a-scene>
 </body>
 </html>
